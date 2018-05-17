@@ -427,10 +427,10 @@ footer .cv-pdf i:hover{
     width:70%;
 }
 
-button[type="submit"]{
+.button {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #c84610;
+    background-color:#c84610;
     color:#fafafa;
     
 }
