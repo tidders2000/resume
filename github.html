@@ -1,14 +1,20 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Download-S.Tidman</title>
+    <title>Resume-S.Tidman</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/github-styles.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/github-information.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -53,40 +59,49 @@
 
         </div>
     </header>
-
-    
-    
-
-
-    <footer class="container-fluid footie">
-        <div class="row">
-
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub"> About</h5>
-                <p class="inline-block">Full Stack Web Developer skilled in HTML,JS,Python.GIT,SQL,PHP and bootstrap. Currently undertaking a coding diploma with the Code Institute</p>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
             </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub"> Download myCV</h5>
-                <p class="inline-block">Need a printable version of my CV? Download it here.
-                    <a href="#" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"></i></i></a>
+
+            <div class="center-form">
+                <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()" />
+                <div id="gh-user-data"></div>
+                <div id="gh-repo-data"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="container-fluid ">
+        <div id="footer-details " class="row ">
+            <div class="col-sm-4 ">
+                <h5 class="uppercase general-sub ">About</h5>
+                <p class="inline-block ">
+                    Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.
                 </p>
             </div>
-
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Social Media</h5>
-                <ul class="list-inline social-links">
-                    <li><a target="_blank" href=""><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href=""><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href=""><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href=""><i class="fa fa-pinterest"></i></a></li>
-                    <li><a target="_blank" href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href=""><i class="fa fa-youtube"></i></a></li>
+            <div class="col-sm-4 ">
+                <h5 class="uppercase general-sub ">Download My CV</h5>
+                <p class="inline-block ">
+                    Need a printable version of my CV? Download it here.
+                    <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf "><i class="fa fa-download " aria-hidden="true "></i></a>
+                </p>
+            </div>
+            <div class="col-sm-4 ">
+                <h5 class="uppercase general-sub ">MySocial</h5>
+                <ul class="list-inline social-links ">
+                    <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-linkedin "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-pinterest "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
+                    <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
                 </ul>
             </div>
-
         </div>
     </footer>
-
 </body>
 
 </html>

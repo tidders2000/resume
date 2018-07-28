@@ -23,6 +23,15 @@
     background-color: #525252;
 }
 
+
+.ui-menu-color-interests {
+      background-color: red;
+}
+
+.ui-menu-color-github{
+    background-color: green;
+}
+
 .bg-color-three-reasons {
     background-color: #ffffff;
 }
@@ -83,7 +92,7 @@ h1. h2. h3. h4. {
 }
 
 .logo {
-    background: url(assets/images/simon2.jpg);
+    background: url(../images/simon2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,7 +263,7 @@ footer .cv-pdf i{
 }
 footer .cv-pdf i:hover{
     color: #cc5500;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease-in-out;
     -moz-  transition: all 0.5s ease;
     -webkit-  transition: all 0.5s ease;
 }
@@ -279,7 +288,7 @@ footer .cv-pdf i:hover{
     -moz-  transition: all 0.5s ease;
     -webkit-  transition: all 0.5s ease;
 }
-    
+   div#map {min-height: 360px;} 
 
 .social-links li a i:hover{
      background:  #cc5500;
@@ -427,13 +436,22 @@ footer .cv-pdf i:hover{
     width:70%;
 }
 
-.button {
+
+ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color:#c84610;
-    color:#fafafa;
-    
+    background-color: #e84610;
+    color: #fafafa;
 }
+
+
+.map-heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
 /*...........................media queries*/
 
 @media(min-width: 992px){
